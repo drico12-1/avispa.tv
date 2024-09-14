@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coffee+Soda:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+padding: 0;
+box-sizing: 0;
+box-sizing: border-box;
+text-decoration: none;
+font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100px;
+background: white;
+box-shadow: 0 4px 25px -22px black;
+z-index: 2;
+height: 500px; /* Puedes ajustar esta altura */
+  padding: 80px 0; /* O puedes usar padding para darle más espacio interno */
+}
+.header-content{
+max-width: 1200px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+}
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.logo h1 p img {
+    max-height: 130px; /* Ajusta la altura máxima de la imagen */
+    width: auto; /* Mantiene la proporción */
+    display: inline-block; /* Asegura que se mantenga en línea con el texto */
+    margin-right: 10px; /* Agrega un espacio entre la imagen y el texto */
+}
+
+.logo {
+    font-family: 'Coffee Soda', sans-serif;
+    font-size: 3rem; /* Ajusta el tamaño según tus necesidades */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta la sombra según tus preferencias */
+  }
+.logo h1{
+    color:yellow;
+    margin-top: -20px; /* Ajusta este valor para subir el h1 */
+    position: relative;
+}
+.logo h1 b{
+    color: #e67e22;
+    margin-top: -0px; /* Ajusta este valor para subir el h1 */
+    position: relative;
+}
+.menu{
+    height: 80px;
+    margin-top: -40px; /* Ajusta este valor según lo que necesites */
+    position: relative;
+}
+.menu nav{
+    height: 100%;
+}
+
+.menu nav ul{
+height: 100%;
+display: flex;
+list-style: none;
+}
+
+.menu nav ul li{
+height: 100%;
+margin: 0px 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.menu-selected:before{
+content: "";
+width: 100%;
+height: 4px;
+background: red;
+position: absolute;
+top: 0;
+left: 0;
+}
+.menu nav ul li a{
+    color: #777777;
+}
+#menuIcon{
+width: 50px;
+height: 50px;
+position: absolute;
+right: 20px;
+top: 16px;
+padding: 10px;
+font-size: 20px;
+background: #fafafafa;
+border-radius: 100%;
+color: #ba4a00;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+
+}
+    
+/*portada*/
+.container-cover{
+    width: 100%;
+height: 300px;
+position: relative;
+margin-top: 80px;
+background-image: url(https://www.elheraldo.co/sites/default/files/styles/1200x675/public/articulo/2018/01/14/colegio_villa_de_san_pablo_2.jpg);
+
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.container-cover:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+    
+    .container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    }
+    
+    .container-info-cover h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .container-info-cover h1 b{
+        color: yellow;
+    }
+    
+    .container-info-cover p{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    /*contenedor-Contenido del Articulo*/
+    
+    .container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    }
+    article{
+        width: 100%;
+        padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    }
+    article:before{
+    content: "";
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ba4a00;
+    }
+    
+    article h1{
+    margin-top: 20px;
+   font-weight: 800;
+    font-size: 40px;
+    color: #ba4a00;
+    }
+    
+    article p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+    }
+    
+    article img{
+    width: 100%;
+    margin-top: 20px;
+    }
+    /*footer-pie de pagina*/
+    .container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background: #f7f7f7;
+    margin-top: 40px;
+    }
+    
+    .container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+    }
+    
+    .container-footer footer .logo-footer{
+        text-align: center;
+    }
+    
+    .container-footer footer .logo-footer img{
+    width: 100px;
+    }
+    
+    .container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    }
+    
+    .container-footer footer .redes-footer.icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+    }
+    .container-footer footer .redes-footer .fa-instagram :hover{
+        background: linear-gradient( to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+        color: #fff;
+    }
+    
+    .container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #a8a8a87a;
+    }
+    
+    .container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500;
+    }
+    
+    
+    /*RESPONSIVE QUE UTILIZE DE CHATGPT*/
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #1a5276;
+        box-shadow: 0 4px 25px -22px black;
+        z-index: 2;
+    }
+    
+    .header-content {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 ;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        height: 80px;
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: flex-end;    /* Baja el contenido un poco más */
+    }
+    
+    .logo img {
+        max-height: 150px;         /* Limita la altura de la imagen */
+        width: auto;              /* Mantiene la proporción de la imagen */
+        margin-right: -2px;      /* Ajusta el espacio para acercar el texto */
+        position: relative;
+        top: 5px;                 /* Baja un poco la imagen */
+        align-items: flex-end; 
+    }
+    
+    .logo h1 {
+       color: yellow;
+        display: flex;
+        align-items: center;      /* Centra el texto verticalmente respecto al logo */
+        font-size: 24px;          /* Ajusta el tamaño de la fuente si es necesario */
+        margin: 0;               /* Elimina márgenes alrededor del título */
+        font-family: 'Coffee Soda', sans-serif;
+  font-size: 3rem; /* Puedes ajustar este valor para hacerlo más grande o más pequeño */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    }
+    
+    .logo h1 b {
+        color: #e67e22;
+        font-family: 'Coffee Soda', sans-serif;
+  font-size: 2rem; /* Puedes ajustar este valor para hacerlo más grande o más pequeño */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    }
+   
+
+.logo h1{
+  font-family: 'Coffee Soda', sans-serif;
+}
+    .menu nav ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    .menu nav ul li {
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .menu-selected:before {
+        display: none;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: #1a5276;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .menu nav ul li a {
+        color:white;
+        font-weight: 600;
+  }
+  #menuIcon{
+        width: 50px;
+height: 50px;
+position: absolute;
+right: 20px;
+top: 16px;
+padding: 10px;
+font-size: 20px;
+background: #fafafafa;
+border-radius: 100%;
+color: #ba4a00;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+
+
+    }
+    .video-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Portada */
+    .container-cover {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        margin-top: 80px;
+        background-image: url(https://www.elheraldo.co/sites/default/files/styles/1200x675/public/articulo/2018/01/14/colegio_villa_de_san_pablo_2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .container-cover:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(186, 74, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .container-info-cover {
+        max-width: 800px;
+        height: 500px;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .container-info-cover h1 {
+        font-size: 60px;
+        font-weight: 800;
+        color: white;
+        margin-bottom: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    .container-info-cover p {
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    /* Contenedor de contenido del artículo */
+    .container-content {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+    
+    article {
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 40px;
+        box-shadow: -10px 0 20px -30px black;
+        border-radius: 6px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    article:before {
+        content: "";
+        width: 100%;
+        height: 6px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #ba4a00;
+    }
+    
+    article h1 {
+        margin-top: 20px;
+        font-weight: 800;
+        font-size: 40px;
+        color: #ba4a00;
+    }
+    
+    article p {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #3c3c3c;
+    }
+    
+    article img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    /* Footer */
+    .container-footer {
+        width: 100%;
+        padding: 40px 0;
+        background: #f7f7f7;
+        margin-top: 40px;
+    }
+    
+    .container-footer footer {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .container-footer footer .logo-footer {
+        text-align: center;
+    }
+    
+    .container-footer footer .logo-footer img {
+        width: 100px;
+    }
+    
+    .container-footer footer .redes-footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .container-footer footer .redes-footer.icon-redes-footer {
+        font-size: 20px;
+        margin: 20px;
+        background: #efefef;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        color: #a2a2a2;
+    }
+    
+    .container-footer footer .redes-footer .fa-instagram :hover {
+        background: linear-gradient( top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+        color: #fff;
+    }
+    
+    .container-footer footer hr {
+        margin-top: 20px;
+        border: none;
+        height: 2px;
+        background: #a8a8a87a;
+    }
+    
+    .container-footer h4 {
+        text-align: center;
+        margin-top: 40px;
+        color: #8e8e8e;
+        font-weight: 500;
+    }
+    
+    /* Media Queries */
+    @media (min-width: 768px) { /* Puedes ajustar el ancho máximo según tus necesidades */
+        #menuIcon {
+            display: none; /* Ocultar icono en pantallas grandes */
+            
+        }
+        }
+    @media (max-width: 1200px) {
+        .header-content, .menu, .container-content, .container-footer footer {
+            max-width: 100%;
+            padding: 0 20px;
+        }
+    }
+
+    
+    @media (max-width: 768px) {
+        .menu nav ul {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+          
+            top: 80px;
+            right: none; 
+        left: -190px;
+            background: #e67e22;
+            box-shadow: 0 4px 25px -22px black;
+           border: 2px solid #1a5276;
+           border-radius: 10px;
+           border-width: 5px;
+            padding: 20px;
+           width: 200px;
+           height: 150px;
+        }
+    
+        .menu nav ul.show {
+            display: flex;
+            
+        }
+   
+        .menu nav ul li {
+        
+            margin:-4px;
+            margin-bottom: 15px;
+        }
+   
+        .container-info-cover h1 {
+            font-size: 40px;
+        }
+    
+        .container-info-cover p {
+            font-size: 16px;
+        }
+    
+        .menu-toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    
+        .menu-toggle span {
+            width: 30px;
+            height: 3px;
+            background: #777;
+            margin: 5px 0;
+        }
+    
+        .menu-toggle span:nth-child(2) {
+            width: 25px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .container-info-cover h1 {
+            font-size: 30px;
+        }
+    
+        .container-info-cover p {
+            font-size: 14px;
+        }
+    
+        article h1 {
+            font-size: 30px;
+        }
+    
+        article p {
+            font-size: 16px;
+        }
+    }
+
+
+    .menu-icon {
+        font-size: 24px;
+        color: #ba4a00;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        padding: 0;
+    }
+    
+    @media (max-width: 768px) {
+        .menu-icon {
+            display: block; 
+        }
+    }
+
+ 
+
+/* Media Queries para pantallas más pequeñas */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-section {
+    flex: 1 1 100%;
+    padding-right: 20px;
+}
+
+.info-section {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 24px;
+    color: black;
+}
+
+#countdown div {
+    text-align: center;
+}
+
+
+
+.icon-redes-article i {
+    font-size: 130px; 
+    color:red;  
+    text-decoration: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+  
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .carousel-prev, .carousel-next {
+      font-size: 18px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .carousel-prev, .carousel-next {
+      font-size: 16px;
+      padding: 6px;
+    }
+  }
+
+    
+
+/*REDES*/
+.redes-footer {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px 0;
+   
+}
+
+.icon-redes-footer {
+    color: #ba4a00; 
+    font-size: 24px; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.icon-redes-footer:hover {
+    color:#1a5276; 
+}
+
+
+.canal-youtube h1{
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 40px;
+    color: #ba4a00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

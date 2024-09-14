@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Inicio-Avispa Tv</title>
+    <link rel="icon" href="img/Imagen_de_WhatsApp_2024-09-05_a_las_22.57.01_215d3f83-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Coffee+Soda:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://l67d0rvai11gl3rcggfkg.ai.copilot.live" async></script>
+    <link href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css" rel="stylesheet">
+    <script src="inicio.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    
+   <!--header-menu-->
+   
+   <header>
+    
+    <div class="header-content">
+        <div class="logo">
+          <h1><p><img src="img/Imagen_de_WhatsApp_2024-09-05_a_las_22.57.01_215d3f83-removebg-preview.png" alt=""></p>A-vispa <b>Tv</b></h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="menu-selected"><a href="#">INICIO</a></li>
+                    <li><a href="noticas.html">NOTICIAS</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="faq.html">FAQ</a></li> 
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-icon"> <div id="menuIcon">
+            <i class="fa-solid fa-bars"></i>
+        </div></div>
+    </div>
+
+
+
+
+</div>
+    </div>
+</div>
+
+
+   </div>
+
+
+
+    </header>
+
+    
+
+
+
+    </div>
+
+    <!--portada--> 
+    <div class="container-cover">
+         <div class="container-info-cover">
+        <h1>¡Alerta por la Naturaleza, unidos por el cambio!</b></h1>
+     
+
+
+         </div>
+
+
+    </div>
+   <div 
+   class="container-content">
+   
+   <article>
+
+
+    <div class="carousel">
+        <div class="carousel-wrapper">
+          <div class="carousel-slide">
+            <img src="img/carru1.jpg" alt="Slide 1">
+          </div>
+          <div class="carousel-slide">
+            <img src="img/carru2.jpg" alt="Slide 2">
+          </div>
+          <div class="carousel-slide">
+            <img src="img/carru3.jpg" alt="Slide 3">
+          </div>
+        </div>
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+      </div>
+      <script src="scripts.js"></script>
+
+
+
+
+
+   </article>
+  <!--CHATBOOT--> 
+   <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+  <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+  <script defer>
+    window.botpress.on('*', (event) => {
+      Toastify({ text: `Event: ${event.type}` }).showToast();
+    });
+
+    window.botpress.on('webchat:ready', (conversationId) => {
+      Toastify({ text: 'Webchat Ready' }).showToast();
+    });
+
+    window.botpress.on('webchat:opened', (conversationId) => {
+      Toastify({ text: 'Webchat Opened' }).showToast();
+    });
+
+    window.botpress.on('webchat:closed', (conversationId) => {
+      Toastify({ text: `Webchat Closed` }).showToast();
+    });
+
+    window.botpress.on('conversation', (conversationId) => {
+      Toastify({ text: `Conversation: ${conversationId}` }).showToast();
+    });
+
+    window.botpress.on('message', (message) => {
+      Toastify({ text: `Message Received: ${message.id}` }).showToast();
+    });
+
+    window.botpress.on('messageSent', (message) => {
+      Toastify({ text: `Message Sent: ${message}` }).showToast();
+    });
+
+    window.botpress.on('error', (error) => {
+      Toastify({ text: `Error: ${error}` }).showToast();
+    });
+
+    window.botpress.on('webchatVisibility', (visibility) => {
+      Toastify({ text: `Visibility: ${visibility}` }).showToast();
+    });
+
+    window.botpress.on('webchatConfig', (visibility) => {
+      Toastify({ text: 'Webchat Config' }).showToast();
+    });
+
+    window.botpress.on('customEvent', (anyEvent) => {
+      Toastify({ text: 'Received a custom event' }).showToast();
+    });
+  </script>
+  <script src="https://mediafiles.botpress.cloud/e60284a5-f929-4cce-b50f-a3e2ef47347a/webchat/v2.1/config.js"
+    defer></script>
+    <!--CHATBOOT-->
+   
+   <article>
+    <div class="container">
+        <div class="video-section">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/is4XjHQKGNI" 
+                    title="MEDIO ambiente" frameborder="0" allowfullscreen></iframe>
+      
+   </article>
+  
+   
+    
+
+
+
+   
+   
+   
+   
+   
+   <article>
+    
+    
+    
+ 
+    
+    
+        <h1>Misión</h1>
+    <p>En  Avispa Tv, nuestra misión es fomentar una conciencia ambiental en nuestra comunidad educativa. A través de proyectos innovadores, buscamos inspirar a los estudiantes a ser agentes de cambio, promoviendo prácticas sostenibles y cuidando nuestro entorno natural. Nos comprometemos a educar sobre la importancia de proteger el medioambiente, involucrando a todos en la creación de un futuro más verde y saludable.</p>
+
+        <img src="img/Captura de pantalla 2024-09-13 142628.png" alt="">
+
+        
+        
+<h1>Vision</h1>
+<p>Ser un referente en educación ambiental dentro de nuestra comunidad, empoderando a los estudiantes de la I.E.D. Villas de San Pablo para que lideren iniciativas sostenibles que impacten positivamente el entorno. Aspiramos a formar generaciones conscientes y comprometidas con la preservación del medioambiente, capaces de influir en su entorno con acciones innovadoras que promuevan un desarrollo armonioso entre la sociedad y la naturaleza.</p>
+    <img src="img/vision.jpg" alt="">
+
+
+    <h1>¿Quienes Somos?</h1>
+    <p>Somos un grupo de estudiantes de la I.E.D. Villas de San Pablo comprometidos con la creación de contenido educativo mediante tecnicas de eduentretenimiento a través de  A-vispa TV. Nuestro objetivo es informar y conectar a la comunidad con temas relevantes, desde el medioambiente hasta la cultura local, utilizando la tecnología como herramienta para promover el aprendizaje y la creatividad. A través de nuestro canal, buscamos inspirar a otros jóvenes a ser voces activas en la construcción de un futuro mejor.</p>
+        <img src="img/Imagen de WhatsApp 2024-09-06 a las 07.58.24_3e762927.jpg" alt="">
+<div class="canal-youtube">
+  <h1>Canal de Youtube</h1>
+</div>
+<p>Descubre A-vispa TV, el canal donde un grupo de estudiantes de la I.E.D. Villas de San Pablo te lleva en un recorrido por los temas más importantes del medioambiente. Aprende con nuestros videos, conoce iniciativas locales, y encuentra formas prácticas de cuidar el planeta. ¡Haz clic para ver más!</p>
+<div class="redes-article">
+    <a href="https://www.youtube.com/channel/UCyUE3erT7GGkxJmQNJD8rRg" target="_blank" class="icon-redes-article">
+        <i class="fab fa-youtube"></i>
+    </a>
+</div>
+
+    </article>
+  
+</div> 
+<div class="container-footer">
+    <footer>
+        <div class="logo-footer">
+     <img src="img/Imagen_de_WhatsApp_2024-09-05_a_las_22.57.01_215d3f83-removebg-preview.png" alt="">
+        </div>
+        <div class="redes-footer">
+          <a href="https://www.instagram.com/a_vispa_tv?igsh=dHg0Mnl5MmY3NWY=" target="_blank" class="icon-redes-footer">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@avispa.tv?_t=8pcTv5TYPRu&_r=1" target="_blank" class="icon-redes-footer">
+              <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="mailto:avipa.tv@gmail.com" target="_blank" class="icon-redes-footer">
+            <i class="fas fa-envelope"></i>
+           
+            <a href="https://www.youtube.com/channel/UCyUE3erT7GGkxJmQNJD8rRg" target="_blank" class="icon-redes-footer">
+              <i class="fab fa-youtube"></i>
+
+              <a href="https://www.facebook.com/share/YiFVXzhKLYvFiMwP/?mibextid=qi2Omg" target="_blank" class="icon-redes-footer">
+                <i class="fab fa-facebook-f"></i>
+
+      </div>
+      
+        
+       
+        <hr>
+        <h4>© 2024 Avispa Tv- Todos los derechos reservados</h4>
+    </footer>
+
+
+
+
+</div>
+</div>
+</body>
+</html>
